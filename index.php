@@ -44,7 +44,7 @@
 </head>
 <body>
     <div class="card p-4 shadow">
-        <h6 class="display-6 text-center mb-4">BeritaApps</h6>
+        <h6 class="display-6 text-center mb-4">Rental Kendaraan Rahmat Blok CVT</h6>
         <?php
             if (isset($_GET['pesan'])) {
                 if ($_GET['pesan'] == "gagal") {
