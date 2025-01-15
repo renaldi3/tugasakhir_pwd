@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result_petugas->num_rows > 0) {
         // Login sebagai petugas
         $user = $result_petugas->fetch_assoc();
-        $_SESSION['username'] = $user['usernamek'];
+        $_SESSION['username'] = $user['username'];
         $_SESSION['status'] = "login";
         $_SESSION['role'] = $user['role'];
         header("Location: dashboard.php"); // Redirect ke dashboard petugas
