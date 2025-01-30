@@ -40,16 +40,13 @@
         </div>
         <!-- Spinner End -->
 
-<!-- Navbar & Hero Start -->
+<!-- Navbar start  -->
 <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="#" class="navbar-brand p-0">
-                <h1 class="text-primary mb-0">
-                    <i class="fa fa-car fa-1x"></i> 
-                    <i class="fa fa-motorcycle fa-1x"></i> 
-                    Quick Drive
-                </h1>
+            <a href="#" class="navbar-brand p-0 d-flex align-items-center">
+                <img src="img/logo.png" class="me-2">
+                <h1 class="text-primary mb-0">Quick Drive</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -68,18 +65,17 @@
                     </div>
                     <a href="#contact" class="nav-item nav-link">Kontak</a>
                 </div>
-                <!-- User Section -->
                 <div class="d-flex align-items-center ms-lg-4">
                     <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
-                    <i class="fa fa-user fa-2x"></i>
-                            </a>
-                    <span class="ms-2">Login Admin</span>
+                        <i class="fa fa-user fa-2x"></i>
+                    </a>
+                    <span class="ms-2 d-inline-block">Login Admin</span>
                 </div>
             </div>
         </nav>
     </div>
 </div>
-<!-- Navbar & Hero End -->
+<!-- Navbar End -->
 
 
         <!-- Carousel Start -->
@@ -135,7 +131,7 @@
                     <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;"> <br>
                         <h4 class="text-primary">Testimoni</h4>
                         <h1 class="display-4 mb-4">Kami Berkomitmen untuk Memberikan Pengalaman Terbaik</h1>
-                        <h5 class="mb-0">Apapun tujuan perjalananmu, baik itu untuk liburan seru, keperluan bisnis, atau hanya sekedar keliling kota, kami di QiuckDrive selalu siap memberikan pilihan kendaraan terbaik yang nyaman dan terawat. Kamu gak perlu khawatir soal kenyamanan dan kualitas, karena kami pastikan semua kendaraan kami siap menemani perjalananmu dengan aman dan lancar. Simak cerita seru dari pelanggan kami yang sudah merasakan layanan kami!.
+                        <h5 class="mb-0">Apapun tujuan perjalananmu, baik itu untuk liburan seru, keperluan bisnis, atau hanya sekedar keliling kota, kami di Quick kDrive selalu siap memberikan pilihan kendaraan terbaik yang nyaman dan terawat. Kamu gak perlu khawatir soal kenyamanan dan kualitas, karena kami pastikan semua kendaraan kami siap menemani perjalananmu dengan aman dan lancar. Simak cerita seru dari pelanggan kami yang sudah merasakan layanan kami!
                         </h5>
                     </div>
                     <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
@@ -221,8 +217,8 @@
     <div class="text-center mx-auto">
         <div class="pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px; margin: auto;" id="aboutUs">
             <h4 class="text-primary">About Us</h4>
-            <h1 class="display-4 mb-4">Memberikan pengalaman menarik tentang hal rental</h1>
-            <p class="mb-0">QiuckDrive sudah terpercaya di tingkat nasional dengan reputasi global.</p>
+            <h1 class="display-4 mb-4">Ada dua pilihan kendaraaan yang bisa kamu pilih</h1>
+            <p class="mb-0">Qiuck Drive sudah terpercaya di tingkat nasional dengan reputasi global.</p>
         </div>
         <div class="row g-4 justify-content-center">
             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
@@ -415,9 +411,9 @@
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-6 col-xl-5">
                             <div class="footer-item">
-                                <a href="index.html" class="p-0">
-                                    <h3 class="text-white"><i class="fab fa-slack me-3"></i> Quick Drive</h3>
-                                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                                <a href="index.html" class="p-0 d-flex align-items-center text-decoration-none">
+                                    <img src="img/logo.png" class="me-2" style="width: 50px; height: auto;">
+                                    <h3 class="text-white mb-0">Quick Drive</h3>
                                 </a>
                                 <p class="text-white mb-4">Ikuti juga beragam sosial media kami!</p>
                                 <div class="footer-btn d-flex">
@@ -440,61 +436,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4">
-                            <div class="footer-item">
-                                <h4 class="mb-4 text-white">Instagram</h4>
-                                <div class="row g-3">
-                                    <div class="col-4">
-                                        <div class="footer-instagram rounded">
-                                            <img src="img/instagram-footer-1.jpg" class="img-fluid w-100" alt="">
-                                            <div class="footer-search-icon">
-                                                <a href="img/instagram-footer-1.jpg" data-lightbox="footerInstagram-1" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <div class="col-4">
-                                        <div class="footer-instagram rounded">
-                                            <img src="img/instagram-footer-2.jpg" class="img-fluid w-100" alt="">
-                                            <div class="footer-search-icon">
-                                                <a href="img/instagram-footer-2.jpg" data-lightbox="footerInstagram-2" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                            </div>
-                                        </div>
-                                   </div>
-                                    <div class="col-4">
-                                        <div class="footer-instagram rounded">
-                                            <img src="img/instagram-footer-3.jpg" class="img-fluid w-100" alt="">
-                                            <div class="footer-search-icon">
-                                                <a href="img/instagram-footer-3.jpg" data-lightbox="footerInstagram-3" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                            </div>
-                                        </div>
-                                   </div>
-                                    <div class="col-4">
-                                        <div class="footer-instagram rounded">
-                                            <img src="img/instagram-footer-4.jpg" class="img-fluid w-100" alt="">
-                                            <div class="footer-search-icon">
-                                                <a href="img/instagram-footer-4.jpg" data-lightbox="footerInstagram-4" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                            </div>
-                                        </div>
-                                   </div>
-                                    <div class="col-4">
-                                        <div class="footer-instagram rounded">
-                                            <img src="img/instagram-footer-5.jpg" class="img-fluid w-100" alt="">
-                                            <div class="footer-search-icon">
-                                                <a href="img/instagram-footer-5.jpg" data-lightbox="footerInstagram-5" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <div class="col-4">
-                                        <div class="footer-instagram rounded">
-                                            <img src="img/instagram-footer-6.jpg" class="img-fluid w-100" alt="">
-                                            <div class="footer-search-icon">
-                                                <a href="img/instagram-footer-6.jpg" data-lightbox="footerInstagram-6" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Jam Operasional</h4>
+                            <ul class="list-unstyled text-white">
+                                <li>Senin - Jumat: 08.00 - 17.00</li>
+                                <li>Sabtu: 08.00 - 15.00</li>
+                                <li>Minggu: Tutup</li>
+                            </ul>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
@@ -542,21 +493,59 @@
             
             <div class="col-xl-3">
                 <div class="footer-item">
-                    <h4 class="text-white mb-4">Berita</h4>
-                    <p class="text-white mb-3">ada beberapa berita yang bisa kamu baca juga</p>
-                    <div class="position-relative rounded-pill mb-4">
-                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                        <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                    </div>
-                    <div class="d-flex flex-shrink-0">
-                        <div class="footer-btn">
-                            <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
-                                <i class="fa fa-phone fa-2x"></i>
-                            </a>
+                    <h4 class="text-white mb-4">FAQ</h4>
+                        <div class="accordion" id="faqAccordion">
+                       <!-- Pertanyaan 1 -->
+                        <div class="accordion-item bg-transparent border-0 mb-2">
+                            <h5 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed text-white bg-primary rounded p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" style="box-shadow: none; transition: all 0.3s ease;">
+                                    <i class="fas fa-question-circle me-2"></i> Bagaimana cara menyewa mobil?
+                                </button>
+                            </h5>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white bg-dark rounded-bottom p-3">
+                                    Anda bisa langsung memilih mobil di katalog kami dan mengisi formulir pemesanan.
+                                </div>
+                            </div>
+                         </div>
+                     <!-- Pertanyaan 2 -->
+                        <div class="accordion-item bg-transparent border-0 mb-2">
+                          <h5 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed text-white bg-primary rounded p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" style="box-shadow: none; transition: all 0.3s ease;">
+                                    <i class="fas fa-question-circle me-2"></i> Apa saja syarat menyewa mobil?
+                                </button>
+                           </h5>
+                           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                              <div class="accordion-body text-white bg-dark rounded-bottom p-3">
+                                   Anda perlu menyiapkan KTP dan SIM yang masih berlaku.
+                               </div>
+                          </div>
                         </div>
-                        <div class="d-flex flex-column ms-3 flex-shrink-0">
-                            <span>Call to Our Experts</span>
-                            <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456 7890</span></a>
+                       <!-- Pertanyaan 3 -->
+                     <div class="accordion-item bg-transparent border-0 mb-2">
+                         <h5 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed text-white bg-primary rounded p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" style="box-shadow: none; transition: all 0.3s ease;">
+                                    <i class="fas fa-question-circle me-2"></i> Apakah ada biaya tambahan?
+                                </button>
+                           </h5>
+                           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                               <div class="accordion-body text-white bg-dark rounded-bottom p-3">
+                                    Biaya tambahan hanya berlaku jika ada kerusakan atau keterlambatan pengembalian.
+                               </div>
+                         </div>
+                        </div>
+                        <!-- Pertanyaan 4 -->
+                        <div class="accordion-item bg-transparent border-0 mb-2">
+                            <h5 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed text-white bg-primary rounded p-3"            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" style="box-shadow: none; transition: all 0.3s ease;">
+                                   <i class="fas fa-question-circle me-2"></i> Bagaimana jika mobil rusak?
+                             </button>
+                            </h5>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white bg-dark rounded-bottom p-3">
+                                   Segera hubungi tim kami untuk penanganan lebih lanjut.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
