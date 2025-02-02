@@ -3,8 +3,11 @@
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$email = $_POST['email'];
-	$nama = $_POST['nama'];
-	$jk = $_POST['jk'];
+	$nama_pengguna = $_POST['nama_pengguna'];
+	$vfoto=$_FILES['fupload'] ['name'];
+	$tfoto =$_FILES['fupload'] ['tmp_name'];
+	$dir1 ="../gambar/";
+	$jenis_kelamin = $_POST['jenis_kelamin'];
 	$no_tlp = $_POST['no_tlp'];
 	$alamat = $_POST['alamat'];
 
@@ -15,8 +18,10 @@
 		
 		echo "<script>alert('Username atau Email sudah digunakan!'); window.location='addPengguna.php'</script>";
 	}else{
-		$simpan = mysqli_query($conn,"INSERT into pengguna(username,password,email,nama,jk,no_tlp,alamat) values 
-		('$username', '$password','$email','$nama','$jk','$no_tlp','$alamat')");
+		$simpan = mysqli_query($conn,"INSERT into pengguna(username,password,email,nama_pengguna,gambar,jenis_kelamin,no_tlp,alamat) values 
+		('$username', '$password','$email','$nama_pengguna','$vfoto','$jenis_kelamin','$no_tlp','$alamat')");
+		$upload=$dir1.$vfoto;
+		move_uploaded_file($tfoto, $upload);
 		if($simpan){
 			echo "<script>alert('Data berhasil disimpan'); window.location='viewPengguna.php'</script>";
 		}else{

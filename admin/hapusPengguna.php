@@ -1,18 +1,18 @@
 <?php
 include "../koneksi.php";
 
-if (isset($_GET['petugas'])) {
-    $id = $_GET['petugas'];
+if (isset($_GET['id_pengguna'])) {
+    $id = $_GET['id_pengguna'];
 
     // Hapus data berita dari database
-    $delete = mysqli_query($conn, "DELETE FROM petugas WHERE id = '$id'");
+    $delete = mysqli_query($conn, "DELETE FROM pengguna WHERE id_pengguna = '$id'");
 
     if ($delete) {
-        echo "<script>alert('User berhasil dihapus'); window.location='viewPetugas.php';</script>";
+        echo "<script>alert('Data Pengguna berhasil dihapus'); window.location='viewPengguna.php';</script>";
     } else {
         echo "Hapus gagal: " . mysqli_error($conn);
     }
 } else {
-    echo "<script>alert('Parameter tidak valid'); window.location='viewPetugas.php';</script>";
+    echo "<script>alert('Parameter tidak valid'); window.location='viewPengguna.php';</script>";
 }
 ?>

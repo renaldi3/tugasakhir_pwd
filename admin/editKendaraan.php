@@ -24,17 +24,17 @@ if (isset($_POST['update'])) {
     if ($_FILES['gambar']['name']) {
         $gambar = $_FILES['gambar']['name'];
         $temp = $_FILES['gambar']['tmp_name'];
-        move_uploaded_file($temp, "gambar/$gambar");
+        move_uploaded_file($temp, "../gambar/$gambar");
 
         // Update data dengan gambar baru
-        $update = mysqli_query($conn, "UPDATE kendaraan SET nama='$nama', tipe='$tipe',merek='$merek',plat_nomor='$plat_nomor',gambar='$gambar',harga_sewa='$harga_sewa',status='$status' WHERE id_kendaraan='$id'");
+        $update = mysqli_query($conn, "UPDATE kendaraan SET nama_kendaraan='$nama', tipe='$tipe',merek='$merek',plat_nomor='$plat_nomor',gambar='$gambar',harga_sewa='$harga_sewa',status='$status' WHERE id_kendaraan='$id'");
     } else {
         // Update data tanpa mengganti gambar
-        $update = mysqli_query($conn, "UPDATE kendaraan SET nama='$nama', tipe='$tipe',merek='$merek',plat_nomor='$plat_nomor',harga_sewa='$harga_sewa',status='$status' WHERE id_kendaraan='$id'");
+        $update = mysqli_query($conn, "UPDATE kendaraan SET nama_kendaraan='$nama', tipe='$tipe',merek='$merek',plat_nomor='$plat_nomor',harga_sewa='$harga_sewa',status='$status' WHERE id_kendaraan='$id'");
     }
 
     if ($update) {
-        echo "<script>alert('User berhasil diupdate'); window.location='viewKendaraan.php';</script>";
+        echo "<script>alert('Kendaraan berhasil diupdate'); window.location='viewKendaraan.php';</script>";
     } else {
         echo "Update gagal: " . mysqli_error($conn);
     }
@@ -46,7 +46,8 @@ if (isset($_POST['update'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Data Kendaraan</title>
+    <title>Quick Drive - Edit Data Kendaraan</title>
+    <link rel="icon" href="../logobersih.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -60,6 +61,7 @@ if (isset($_POST['update'])) {
 <!-- Page Wrapper -->
 <div id="wrapper">
         <?php 
+        $page = "kendaraan";
         include "sidebar.php";
         
     ?>
@@ -71,11 +73,17 @@ if (isset($_POST['update'])) {
             include "topbar.php";
             ?>
             <div class="container card p-4 shadow mt-5 mb-4">
+            <?php
+                include '../koneksi.php';
+                $id = $_GET['id_kendaraan'];
+                $sql = mysqli_query($conn, "SELECT * FROM kendaraan WHERE id_kendaraan='$id'");
+                while ($data = mysqli_fetch_array($sql)) {
+            ?>
             <h2>Edit Data Kendaraan</h2>
                 <form method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                     <label for="nama" class="form-label">Nama Kendaraan</label>
-                    <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $data['nama']; ?>" required>
+                    <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $data['nama_kendaraan']; ?>" required>
                     </div>
                     <div class="mb-3">
                         <label for="tipe" class="form-label">Tipe Kendaraan</label>
@@ -95,7 +103,7 @@ if (isset($_POST['update'])) {
                     </div>
                     <div class="mb-3">
                         <label for="gambar" class="form-label">Gambar</label>
-                        <input type="file" class="form-control" id="gambar" name="fupload" value="<?php echo $data['gambar']; ?>">
+                        <input type="file" class="form-control" id="gambar" value="<?php echo $data['gambar']; ?>" name="gambar" >
                     </div>
                     <div class="mb-3">
                         <label for="harga_sewa" class="form-label">Harga Sewa Per Hari</label>
@@ -112,6 +120,9 @@ if (isset($_POST['update'])) {
                     <button type="submit" name="update" class="btn btn-primary">Update</button>
                     <a href="viewKendaraan.php" class="btn btn-secondary">Batal</a>
                 </form>
+                <?php
+                }
+                ?>
             </div>
             <?php
             include "footer.php";
@@ -121,7 +132,7 @@ if (isset($_POST['update'])) {
     </div>
 </div>
 <!-- Bootstrap core JavaScript-->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
@@ -129,5 +140,6 @@ if (isset($_POST['update'])) {
 
     <!-- Custom scripts for all pages-->
     <script src="../js/sb-admin-2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rental Kendaraan - Data Kendaraan</title>
+    <title>Quick Drive - Data Kendaraan</title>
+    <link rel="icon" href="../logo.png"/>
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -16,8 +17,9 @@
 </head>
 <body id="page-top">
  <!-- Page Wrapper -->
- <div id="wrapper">
+<div id="wrapper">
 <?php 
+    $page = "kendaraan";
     include "sidebar.php";
 ?>
 <!-- Content Wrapper -->
@@ -30,8 +32,8 @@
             include "topbar.php";
         ?>
 
-        <div class="container mt-4 mb-4">
-            <div class="card">
+        <div class="container mt-5 mb-4">
+            <div class="card shadow">
                 <div class="card-header">
                     <h1 class="display-5">Data Kendaraan</h1>
                 </div>
@@ -60,7 +62,7 @@
                             ?>
                                 <tr>
                                     <td><?php echo $no++;?></td>
-                                    <td><?php echo $data['nama'];?></td>
+                                    <td><?php echo $data['nama_kendaraan'];?></td>
                                     <td><?php echo $data['tipe']; ?></td>
                                     <td><?php echo $data['merek'];?></td>
                                     <td><?php echo $data['plat_nomor'];?></td>
@@ -110,8 +112,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-    </div>
-    <!-- End of Main Content -->
 
 </div>
 <!-- End of Content Wrapper -->

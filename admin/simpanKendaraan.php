@@ -17,7 +17,7 @@
 		// Jika Plat Nomor sudah digunakan
 		echo "<script>alert('Plat Nomor sudah digunakan!'); window.location='addKendaraan.php'</script>";
 	}else{
-		$simpan = mysqli_query($conn,"INSERT into kendaraan(nama,tipe,merek,plat_nomor,gambar,harga_sewa,status) values 
+		$simpan = mysqli_query($conn,"INSERT into kendaraan(nama_kendaraan,tipe,merek,plat_nomor,gambar,harga_sewa,status) values 
 		('$nama', '$tipe','$merek','$plat_nomor','$vfoto','$harga_sewa','$status')");
 		$upload=$dir1.$vfoto;
 		move_uploaded_file($tfoto, $upload);
